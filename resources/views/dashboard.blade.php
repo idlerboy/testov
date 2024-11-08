@@ -1,8 +1,11 @@
 <x-app-layout>
     <div class="container mt-5">
-        <h1 class="mb-4">All Posts</h1>
+        <h1 class="mb-4">Your Posts</h1>
 
-        <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Create New Post</a>
+
+        <a href="{{ route('posts.index') }}" class="btn btn-primary mb-3">All posts</a>
+
+        <a href="{{ route('posts.create') }}" class="btn btn-success mb-3">Create New Post</a>
 
         <div class="row">
             @foreach ($posts as $post)
